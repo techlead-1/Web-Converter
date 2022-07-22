@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="A webpage to pdf converter web app">
+        <meta name="keyword" content="converter, webpage to pdf">
+        <meta name="author" content="Adesanya Ademola">
+
+        <!--Title and Favicon-->
+        <title>Web to Pdf</title>
+
+        <!--Script and Stylesheet-->
+        <script src="https://kit.fontawesome.com/3f024e9297.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+
+
+    <body>
+        <!--Angular app-->
+        <div ng-app="myApp" ng-controller="myCtrl">
+
+            <!--Navigation bar-->
+            <ul>
+                <li><a href="https://github.com/techlead-1" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ademola-adesanya-39926322b/" target="_blank">LinkedIn</a></li>
+            </ul>
+
+            <!--Converter app-->
+            <div class="container">
+                <h1>Convert Web To PDF</h1>
+
+                <!--Url input-->
+                <form class="myform">
+                    <input type="text" name="mylink" ng-model="webUrl" required placeholder="www.example.com">
+                    <div><img src="convert.svg"></div>
+                </form>
+
+                <!--App Instructions-->
+                <div class="instuctions">
+
+                    <!--instruction one-->
+                    <div class="ins-one">
+                        <i class="fa-solid fa-link"></i>
+                        <p>Enter web page URL to convert into PDF</p>
+                    </div>
+
+                    <!--instruction two-->
+                    <div class="ins-two">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <p>Press "Enter" and start the magic!</p>
+                    </div>
+
+                    <!--instruction three-->
+                    <div class="ins-three">
+                        <i class="fa-solid fa-download"></i>
+                        <p>Download the result in seconds!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--End of Angular converter app-->
+
+
+        <!--Angular app script-->
+        <script src="myApp.js"></script>
+        <scirpt src="myCtrl.js"></scirpt>
+    </body>
+</html>

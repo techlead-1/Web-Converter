@@ -1,0 +1,133 @@
+//Global styling
+* {box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
+}
+
+//Variables
+$black: #000000;
+$blue: #0025ea;
+$background: #ffffff;
+$grey: #787878;
+
+//Start of body style
+body {font-family: muli, sans-serif;
+      color: $black;
+      background-color: $background;
+
+      //ng app div
+      div {
+
+        //Navigation styling
+        ul {width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            list-style-type: none;
+
+            //nav elements (li) styling
+            li, a {color: $grey;
+                   font-size: 18px;
+                   text-decoration: none;
+            }
+
+            //nav elements (li) hover effect
+            li, a:hover {color: $black;
+            }
+        }
+        
+        //App container styling
+        div {width: 70%;
+             margin: 150px auto 20px auto;
+
+             //app heading
+             h1 {color: $black;
+                 text-align: center;
+             }
+
+             //Url input styling
+             form {width: 100%;
+                   display: flex;
+                   align-items: center;
+                   margin: 30px auto;
+                   position: relative;
+
+                   //input field style
+                   input {width: 90%;
+                          margin: auto;
+                          color: $black;
+                          background-color: inherit;
+                          border: 0.5px solid $grey;
+                          border-radius: 30px;
+                          transition: 0.5s;
+                          padding: 20px 5px 20px 25px;
+                          font-size: 18px;
+                          font-family: muli, sans-serif;
+                          transition: 300ms;
+                   }
+
+                   //input over effect
+                   input:hover {box-shadow:  28px 28px 57px #d9d9d9,-28px -28px 57px #ffffff;
+                                border: none;
+                   }
+
+                   //input focus effect
+                   input:focus {box-shadow:  28px 28px 57px #d9d9d9,-28px -28px 57px #ffffff;
+                                outline: none;
+                   }
+
+                   //input active effect
+                   input:active {border: none;}
+
+                   //Loading icon styling
+                   div {position: absolute;
+                        background-color: #0025ea;
+                        width: fit-content;
+                        margin: 0px;
+                        right: 6%;
+                        border-radius: 100%;
+                        width: 50px;
+                        height: 50px;
+                        transition: 2s;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 5;
+                   }
+
+                   //loading hover effect
+                   //note: same effect will be used for button click and processing
+                   div:hover {transform: rotate(360deg);
+                   }
+             }
+
+             //instructions section style
+             div {display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-direction: row;
+                  overflow: hidden;
+                  margin: 50px 0px 10px 0px;
+                  width: 100%;
+
+                  //style iterated through all instruction container
+                  div {display: flex;
+                       flex-direction: column;
+                       justify-content: space-between;
+                       align-items: center;
+                       text-align: center;
+
+                       //style iterated through all instruction icon
+                       i {margin: 0px 0px 30px 0px;
+                          color: $blue;
+                          font-size: 40px;
+                       }
+                  }
+             }
+        }
+      }
+}
