@@ -108,3 +108,14 @@ body div div div div i {
   color: #0025ea;
   font-size: 40px;
 }
+
+@media screen and (max-width: 600px) {
+  .instructions {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}

@@ -131,3 +131,15 @@ body {font-family: muli, sans-serif;
         }
       }
 }
+
+//responsive design
+@media screen and (max-width: 600px) {
+     //instructions container
+     .instructions {flex-direction: column;
+     }
+}
+
+@media screen and (max-width: 500px) {
+     .container {width: 90%;
+     }
+}
