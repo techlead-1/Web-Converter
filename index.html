@@ -16,6 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     </head>
 
 
@@ -23,14 +24,16 @@
         <!--Angular app-->
         <div ng-app="myApp" ng-controller="myCtrl">
 
-            <!--Navigation bar-->
+            <!--Top navigation bar-->
             <ul>
-                <li><a href="https://github.com/techlead-1" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/ademola-adesanya-39926322b/" target="_blank">LinkedIn</a></li>
+                <li><a href="#!main">Web To PDF</a></li>
+                <li><a href="#!tojpg">Web To JPG</a></li>
+                <li><a href="#!topng">Web To PNG</a></li>
             </ul>
 
             <!--Converter app-->
             <div class="container">
+                <div class="block" ng-view><!--other html document will be routed here-->
                 <h1>Convert Web To PDF</h1>
 
                 <!--Url input-->
@@ -38,6 +41,7 @@
                     <input type="text" required placeholder="www.example.com" name="Url" value="">
                     <button ng-click="download()" type="submit" value="Convert file"><img src="convert.svg"></button>
                 </form>
+                </div>
 
                 <!--App Instructions-->
                 <div class="instructions">

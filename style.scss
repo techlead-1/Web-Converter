@@ -19,8 +19,8 @@ body {font-family: muli, sans-serif;
       div {
 
         //Navigation styling
-        ul {width: 80%;
-            margin: 50px auto;
+        ul {width: 90%;
+            margin: 40px auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -30,7 +30,7 @@ body {font-family: muli, sans-serif;
 
             //nav elements (li) styling
             li, a {color: $grey;
-                   font-size: 18px;
+                   font-size: 16px;
                    text-decoration: none;
             }
 
@@ -143,4 +143,9 @@ body {font-family: muli, sans-serif;
 @media screen and (max-width: 500px) {
      .container {width: 90%;
      }
+     li,a {font-size: 15px;
+     }
+}
+
+.block {display: block;
 }

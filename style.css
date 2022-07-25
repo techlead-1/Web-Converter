@@ -10,8 +10,8 @@ body {
   background-color: #ffffff;
 }
 body div ul {
-  width: 80%;
-  margin: 50px auto;
+  width: 90%;
+  margin: 40px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +21,7 @@ body div ul {
 }
 body div ul li, body div ul a {
   color: #787878;
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
 }
 body div ul li, body div ul a:hover {
@@ -119,4 +119,10 @@ body div div div div i {
   .container {
     width: 90%;
   }
+  li, a {
+    font-size: 15px;
+  }
+}
+.block {
+  display: block;
 }

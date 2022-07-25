@@ -1,5 +1,5 @@
 //Setting up angular module
-var app = angular.module("myApp", []);
+var app = angular.module("myApp", ["ngRoute"]);
 
 //Angular controller for Angular app "myApp"
 app.controller('myCtrl', function($scope) {
@@ -9,3 +9,4 @@ app.controller('myCtrl', function($scope) {
         alert('Download will start soon...')
     }
 })
+
