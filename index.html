@@ -15,7 +15,7 @@
         <script src="https://kit.fontawesome.com/3f024e9297.js" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     </head>
 
 
@@ -34,9 +34,9 @@
                 <h1>Convert Web To PDF</h1>
 
                 <!--Url input-->
-                <form class="myform">
-                    <input type="text" name="mylink" ng-model="webUrl" required placeholder="www.example.com">
-                    <div><img src="convert.svg"></div>
+                <form class="myform" action="https://v2.convertapi.com/convert/web/to/pdf?Secret=Og6T6uZpn1iUa7EA&download=attachment" method="post" enctype="multipart/form-data">
+                    <input type="text" required placeholder="www.example.com" name="Url" value="">
+                    <button ng-click="download()" type="submit" value="Convert file"><img src="convert.svg"></button>
                 </form>
 
                 <!--App Instructions-->
@@ -70,6 +70,5 @@
 
         <!--Angular app script-->
         <script src="myApp.js"></script>
-        <scirpt src="myCtrl.js"></scirpt>
     </body>
 </html>

@@ -83,12 +83,13 @@ body {font-family: muli, sans-serif;
                    input:active {border: none;}
 
                    //Loading icon styling
-                   div {position: absolute;
+                   button {position: absolute;
                         background-color: #0025ea;
                         width: fit-content;
                         margin: 0px;
                         right: 6%;
                         border-radius: 100%;
+                        border: none;
                         width: 50px;
                         height: 50px;
                         transition: 2s;
@@ -101,7 +102,7 @@ body {font-family: muli, sans-serif;
 
                    //loading hover effect
                    //note: same effect will be used for button click and processing
-                   div:hover {transform: rotate(360deg);
+                   button:hover {transform: rotate(360deg);
                    }
              }
 
