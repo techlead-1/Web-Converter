@@ -109,7 +109,7 @@ body {font-family: muli, sans-serif;
              //instructions section style
              div {display: flex;
                   justify-content: space-between;
-                  align-items: center;
+                  align-items: flex-start;
                   flex-direction: row;
                   overflow: hidden;
                   margin: 50px 0px 10px 0px;
@@ -141,9 +141,11 @@ body {font-family: muli, sans-serif;
 }
 
 @media screen and (max-width: 500px) {
-     .container {width: 90%;
+     .container {width: 100%;
      }
      li,a {font-size: 15px;
+     }
+     input {width: 100%;
      }
 }
 

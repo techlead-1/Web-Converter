@@ -91,7 +91,7 @@ body div div form button:hover {
 body div div div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
   overflow: hidden;
   margin: 50px 0px 10px 0px;
@@ -117,10 +117,13 @@ body div div div div i {
 }
 @media screen and (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 100%;
   }
   li, a {
     font-size: 15px;
+  }
+  input {
+    width: 100%;
   }
 }
 .block {
