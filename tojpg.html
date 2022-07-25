@@ -1,8 +1,76 @@
-<!--Will be inserted to main index-->
-<h1>Convert Web To JPG</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="discription" content="A webpage to pdf converter web app">
+        <meta name="keyword" content="converter, webpage to pdf">
+        <meta name="author" content="Adesanya Ademola">
 
-<!--Url input-->
-<form class="myform" action="https://v2.convertapi.com/convert/web/to/jpg?Secret=Og6T6uZpn1iUa7EA&download=attachment" method="post" enctype="multipart/form-data">
-    <input type="text" required placeholder="www.example.com" name="Url" value="">
-    <button ng-click="download()" type="submit" value="Convert file"><img src="convert.svg"></button>
-</form>
+        <!--Title and Favicon-->
+        <title>Web to JPG</title>
+
+        <!--Script and Stylesheet-->
+        <script src="https://kit.fontawesome.com/3f024e9297.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    </head>
+
+
+    <body>
+        <!--Angular app-->
+        <div ng-app="mySecondApp" ng-controller="mySecondCtrl">
+
+            <!--Top navigation bar-->
+            <ul>
+                <li><a href="index.html">Web To PDF</a></li>
+                <li><a href="tojpg.html">Web To JPG</a></li>
+                <li><a href="topng.html">Web To PNG</a></li>
+            </ul>
+
+            <!--Converter app-->
+            <div class="container">
+                <h1>Convert Web To JPG</h1>
+
+                <!--Url input and api integration-->
+                    <form class="myform" action="https://v2.convertapi.com/convert/web/to/jpg?Secret=Og6T6uZpn1iUa7EA&download=attachment" method="post" enctype="multipart/form-data">
+                       <input type="text" required placeholder="www.example.com" name="Url" value="">
+                       <button ng-click="download()" type="submit" value="Convert file"><img src="convert.svg"></button>
+                    </form>
+
+                <!--App Instructions-->
+                <div class="instructions">
+
+                    <!--instruction one-->
+                    <div class="ins-one">
+                        <i class="fa-solid fa-link"></i>
+                        <p>Enter web page URL to convert into PDF</p>
+                    </div>
+
+                    <!--instruction two-->
+                    <div class="ins-two">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <p>Press "Enter" and start the magic!</p>
+                    </div>
+
+                    <!--instruction three-->
+                    <div class="ins-three">
+                        <i class="fa-solid fa-download"></i>
+                        <p>Download the result in just seconds!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--End of Angular converter app-->
+
+
+        <!--Angular app script-->
+        <script src="mySecondApp.js"></script>
+    </body>
+</html>

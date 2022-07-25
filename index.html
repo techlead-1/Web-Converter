@@ -26,22 +26,20 @@
 
             <!--Top navigation bar-->
             <ul>
-                <li><a href="#!main">Web To PDF</a></li>
-                <li><a href="#!tojpg">Web To JPG</a></li>
-                <li><a href="#!topng">Web To PNG</a></li>
+                <li><a href="index.html">Web To PDF</a></li>
+                <li><a href="tojpg.html">Web To JPG</a></li>
+                <li><a href="topng.html">Web To PNG</a></li>
             </ul>
 
             <!--Converter app-->
             <div class="container">
-                <div class="block" ng-view><!--other html document will be routed here-->
                 <h1>Convert Web To PDF</h1>
 
-                <!--Url input-->
+                <!--Url input and api integration-->
                 <form class="myform" action="https://v2.convertapi.com/convert/web/to/pdf?Secret=Og6T6uZpn1iUa7EA&download=attachment" method="post" enctype="multipart/form-data">
                     <input type="text" required placeholder="www.example.com" name="Url" value="">
                     <button ng-click="download()" type="submit" value="Convert file"><img src="convert.svg"></button>
                 </form>
-                </div>
 
                 <!--App Instructions-->
                 <div class="instructions">

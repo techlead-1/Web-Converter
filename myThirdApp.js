@@ -1,8 +1,8 @@
 //Setting up angular module
-var app = angular.module("myApp", []);
+var app = angular.module("myThirdApp", []);
 
 //Angular controller for Angular app "myApp"
-app.controller('myCtrl', function($scope) {
+app.controller('myThirdCtrl', function($scope) {
     $scope.clicked = false;
 
     $scope.download = function() {
