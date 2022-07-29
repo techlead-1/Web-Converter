@@ -36,10 +36,11 @@
                 <h1>Convert Web To PDF</h1>
 
                 <!--Url input and api integration-->
-                <form class="myform" action="https://v2.convertapi.com/convert/web/to/pdf?Secret=Og6T6uZpn1iUa7EA&download=attachment" method="post" enctype="multipart/form-data">
-                    <input type="text" required placeholder="www.example.com" name="Url" value="" ng-model="webUrl">
-                    <button ng-click="download()" type="submit" value="Convert file"><img src="convert.svg"></button>
+                <form class="myform" action="https://v2.convertapi.com/convert/web/to/pdf?Secret=Og6T6uZpn1iUa7EA&download=attachment" method="post" enctype="multipart/form-data" ng-submit="getResponse()">
+                    <input type="text" placeholder="www.example.com" name="Url" value="" ng-model="webUrl">
+                    <button type="submit" value="Convert file" ng-disabled="check"><img src="convert.svg"></button>
                 </form>
+                <p class="status">{{ status }}</p>
 
                 <!--App Instructions-->
                 <div class="instructions">
