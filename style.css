@@ -129,3 +129,10 @@ body div div div div i {
 .block {
   display: block;
 }
+
+.status {
+  color: red;
+  font-style: italic;
+  margin-top: 0px;
+  text-align: center;
+}
