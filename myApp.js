@@ -5,7 +5,7 @@ var app = angular.module("myApp", []);
 app.controller('myCtrl', function($scope, $interval, $http) {
     $scope.webUrl = ""
     $scope.status = "";
-    $scope.check = true;
+    $scope.check = true;   
 
     //Creating function that will be used to validate url input
     var validateInput = function() {
