@@ -1,12 +1,54 @@
-# webpage-converter
+# 💻 Webpage Converter
 
-This project is built with Angular and Rest Api, it converts webpages to pdf,jpg and png all you have to do is enter the page url
+## 📝 Overview
+Webpage Converter is a 🌐 web application built with **💪 Angular** and **🔄 REST API** that enables 👨‍💻 users to convert 🗂 webpages into **📄 PDF, 🖼 JPG, and 🖼 PNG** formats effortlessly. Simply enter the 🌐 webpage URL, and the 🛠️ app will take care of the rest, generating your desired format in just seconds.
 
-You can converts a full website within seconds, you just need to add the web url and it will get to work
+## ✨ Features
+- **🌎 Convert Webpages**: Quickly transform webpages into **📄 PDF, 🖼 JPG, or 🖼 PNG** formats.
+- **🌐 Full Website Conversion**: Convert entire websites seamlessly.
+- **🔒 Intelligent URL Validation**:
+  - ✅ Automatically adds `http://` or `https://` if missing.
+  - 📲 Detects and highlights spaces in the URL.
+  - 🌍 Checks for domain extensions and prompts the user to add one if absent.
+- **🛠️ User-Friendly Interface**: Simple and intuitive input system for hassle-free conversions.
 
-The web app uses an advanced key based input validation system that verifies your url input and ensures it is correct.
+## 🌟 How It Works
+1. Enter the **🌐 webpage URL** in the input field.
+2. The 🛠️ app **🔄 validates** the URL and ensures it's properly formatted.
+3. Choose the desired **🎭 output format** (📄 PDF, 🖼 JPG, or 🖼 PNG).
+4. Click **🔍 Convert**, and within seconds, the 📁 file is generated and ready for download.
 
-It can add an http:// prefix if not present, notifes you if there are spaces in the url and where the space is detected, it also auto detects a domain extension and prompts you to add one if absent
+## 💻 Live Demo
+You can check out the live version of the project here: [Converter App](https://webconverter.netlify.app)
+
+## ⚙️ Technologies Used
+- **💪 Angular** – Frontend framework
+- **🔄 REST API** – Backend communication
+- **📚 HTML/CSS** – UI styling
+- **🌐 JavaScript/TypeScript** – Logic and scripting
+
+## 🛠️ Installation & Setup
+If you want to run this project locally, follow these steps:
+
+### ⚡ Prerequisites
+- Install **💻 Node.js** and **🛠️ Angular CLI**
+
+### 🔄 Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/webpage-converter.git
+   cd webpage-converter
+2. ```sh
+   npm install
+3. ```sh
+   ng serve
+4. Open your 💻 browser and navigate to http://localhost:4200/
 
 
-You can check the project out at: <a href="https://webconverter.netlify.app" target="_blank">Converter App</a>
+### 📚 Contributions
+
+🚀 Contributions are welcome! Feel free to ♻️ fork the repository and submit a pull request.
+
+### 🌟 License
+
+This project is open-source and available under the 🏆 MIT License.
